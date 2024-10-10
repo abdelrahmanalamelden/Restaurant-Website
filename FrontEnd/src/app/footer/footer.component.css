@@ -1,0 +1,165 @@
+a {
+  text-decoration: none;
+  color: #adb29e;
+}
+
+a:hover {
+  color: #5c5656;
+}
+
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 40px 20px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+/* First part: Logo and description */
+.first-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.first-part p {
+  width: 100%;
+  max-width: 293px;
+  color: #adb29e;
+}
+
+/* Social media icons */
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+.links a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Second part: Pages links */
+.second-part,
+.third-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+/* Fourth part: Instagram images */
+.fourth-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ig-imgs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer copyright */
+.final {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.final p {
+  color: #adb29e;
+}
+
+hr {
+  background-color: #414536;
+  width: 80vw;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 50px;
+  }
+  .first-part p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    padding: 20px 30px;
+  }
+
+  .ig-imgs {
+    grid-template-columns: 1fr;
+  }
+
+  .first-part,
+  .second-part,
+  .third-part,
+  .fourth-part {
+    text-align: center;
+  }
+
+  .img {
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content {
+    padding: 10px 20px;
+  }
+
+  .links {
+    gap: 5px;
+  }
+
+  .img {
+    height: 100px;
+  }
+
+  hr {
+    width: 90vw;
+  }
+}

@@ -1,0 +1,150 @@
+/* Overall About Section */
+.About {
+  background-color: #f9f9f7;
+  display: flex;
+  flex-direction: column; /* Default to column on small screens */
+  padding: 20px;
+  gap: 20px;
+}
+
+@media (min-width: 1160px) {
+  .About {
+    flex-direction: row; /* Switch to row layout on medium+ screens */
+    padding: 40px 60px;
+  }
+}
+
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-direction: column; /* Stack contact info and image on small screens */
+  gap: 20px;
+  align-items: center; /* Center on small screens */
+}
+
+@media (min-width: 1160px) {
+  .contact {
+    flex-direction: row; /* Row layout on larger screens */
+    align-items: flex-start; /* Align to the top */
+  }
+}
+
+.contact-info {
+  background-color: #474747;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  flex: 1; /* Take up available space */
+  display: flex;
+  flex-direction: column;
+  margin-top: -12%;
+}
+
+@media (min-width: 1160px) {
+  .contact-info {
+    width: 411px;
+    height: 321px;
+    margin-left: -50%;
+    margin-top: 50%;
+    width: auto; /* Allow the width to adjust */
+  }
+}
+
+.contact > img {
+  width: 100%; /* Responsive image */
+  max-width: 500px; /* Limit the image size on larger screens */
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contact Container */
+.contact-container {
+  width: 100%; /* Full width on small screens */
+  max-width: 1200px; /* Limit the width on larger screens */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+@media (min-width: 1160px) {
+  .contact-container {
+    flex-direction: column; /* Row layout on larger screens */
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+/* About Text Section */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%; /* Full width on small screens */
+  margin: auto;
+}
+
+@media (min-width: 1160px) {
+  .about {
+    width: 50%; /* 50% width on larger screens */
+    align-items: flex-start; /* Left-align text on larger screens */
+  }
+}
+
+.about h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+@media (min-width: 1160px) {
+  .about h1 {
+    font-size: 2.5rem;
+    text-align: left; /* Align left on larger screens */
+  }
+}
+
+.about p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 1160px) {
+  .about p {
+    text-align: left; /* Align left on larger screens */
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive Grid for Contacts */
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 1160px) {
+  .contacts {
+    flex-direction: column; /* Horizontal layout for medium+ screens */
+    justify-content: flex-start;
+  }
+}
+
+.contacts div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center; /* Center content on small screens */
+}
+
+@media (min-width: 1160px) {
+  .contacts div {
+    justify-content: flex-start; /* Left-align content on larger screens */
+  }
+}

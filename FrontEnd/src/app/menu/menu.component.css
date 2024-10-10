@@ -1,0 +1,67 @@
+/* General container styling */
+.container {
+  margin: auto; /* Center content */
+}
+
+/* Heading Section */
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 50px auto; /* Reduce margin for mobile devices */
+  text-align: center;
+  padding: 0 20px; /* Add padding for smaller screens */
+}
+
+/* Responsive Heading */
+.heading h1 {
+  font-size: 2.5rem; /* Responsive font size for heading */
+}
+
+.heading p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Larger screens: Increase heading font size */
+@media (min-width: 768px) {
+  .heading h1 {
+    font-size: 4rem;
+  }
+
+  .heading p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heading h1 {
+    font-size: 5rem; /* Even larger for desktops */
+  }
+
+  .heading {
+    width: 70%; /* Set width on larger screens */
+  }
+}
+
+/* Buttons Section */
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between buttons */
+  width: 100%;
+  margin: 20px auto;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 50px 20px; /* Margin around the cards section */
+}
+
+/* Responsive cards */

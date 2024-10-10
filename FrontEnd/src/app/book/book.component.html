@@ -1,0 +1,75 @@
+<div class="all">
+  <div class="container">
+    <div class="heading">
+      <h1>Book A Table</h1>
+      <p>
+        We consider all the drivers of change gives you the components you need
+        to change to create a truly happens.
+      </p>
+    </div>
+    <div class="form-container">
+      <form (submit)="submitBook($event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="date">Date</label>
+            <input name="date" type="date" id="date" placeholder="04/01/2021" />
+          </div>
+          <div class="form-group">
+            <label for="time">Time</label>
+            <select name="time" id="time">
+              <option>06:30 PM</option>
+              <option>07:00 PM</option>
+              <option>07:30 PM</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              name="name"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input
+              name="phone"
+              type="text"
+              id="phone"
+              placeholder="x-xxx-xxx-xxxx"
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="persons">Total Person</label>
+            <select name="count" id="persons">
+              <option>1 Person</option>
+              <option>2 Persons</option>
+              <option>3 Persons</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Book A Table</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.50294829376!2d31.347000225553952!3d30.05111472492025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583ffe2924d7f9%3A0x1bfe4412dce53e87!2sEl%20Serag%20Mall!5e0!3m2!1sen!2seg!4v1726390259236!5m2!1sen!2seg"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+</div>

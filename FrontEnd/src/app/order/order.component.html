@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="heading">
+    <h1>You can order through apps</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipiscing elit enim bibendum sed
+      et aliquet aliquet risus tempor semper.
+    </p>
+  </div>
+  <div class="apps">
+    <div *ngFor="let app of apps" class="app">
+      <a [href]="app.link" target="_blank"><img [src]="app.src" alt="app" /></a>
+    </div>
+  </div>
+</div>

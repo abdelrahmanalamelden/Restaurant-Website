@@ -1,0 +1,37 @@
+<nav>
+  <div class="logo">
+    <a href="/"><img src="./images/japanese-food.png" alt="logo" /></a>
+    <h1>Bistro Bliss</h1>
+  </div>
+
+  <div
+    class="hamburger"
+    (click)="toggleMenu()"
+    [class.active]="isMenuOpen"
+  ></div>
+
+  <div class="nav-links" [class.show]="isMenuOpen">
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
+    <a routerLink="/About" routerLinkActive="active">About</a>
+    <a routerLink="/Menu" routerLinkActive="active">Menu</a>
+    <a routerLink="/book" routerLinkActive="active">Book</a>
+    <a routerLink="/contact" routerLinkActive="active">Contact</a>
+    <a routerLink="/login" *ngIf="!isLoggedIn" routerLinkActive="active"
+      >Login</a
+    >
+
+    <a routerLink="/admin" *ngIf="isAdmin" routerLinkActive="active">Admin</a>
+  </div>
+
+  <div class="nav-buttons" *ngIf="!isMenuOpen">
+    <button class="bn3" *ngIf="isLoggedIn" (click)="logout()">Log out</button>
+    <button class="bn3" routerLink="/book" routerLinkActive="active">
+      Book a table
+    </button>
+  </div>
+</nav>

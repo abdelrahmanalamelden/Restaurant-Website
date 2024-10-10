@@ -1,0 +1,187 @@
+.edit-card {
+  max-width: 600px; /* Adjust as necessary */
+  margin: auto; /* Center the card */
+  padding: 20px; /* Add some padding */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.edit-card form {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+}
+
+.edit-card label {
+  margin-bottom: 5px; /* Space between label and input */
+  font-weight: bold; /* Bold labels */
+}
+
+.edit-card input,
+.edit-card select,
+.edit-card textarea {
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px; /* Space between fields */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+.edit-card input:focus,
+.edit-card select:focus,
+.edit-card textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.edit-card select {
+  appearance: none; /* Remove default styling */
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9" /></svg>')
+    no-repeat right 10px center; /* Custom dropdown arrow */
+  background-size: 1.2em; /* Size of the arrow */
+}
+
+.edit-card button.btn-save {
+  padding: 10px 15px; /* Add padding to the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.edit-card button.btn-save:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.edit-card img {
+  max-width: 200px; /* Maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#category {
+  padding: 10px; /* Add padding */
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  margin-bottom: 15px; /* Space between fields */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Smooth border color transition */
+  background-color: white; /* White background for the select */
+  appearance: none; /* Remove default arrow */
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9" /></svg>'); /* Custom dropdown arrow */
+  background-repeat: no-repeat; /* Do not repeat background image */
+  background-position: right 10px center; /* Position the arrow */
+  background-size: 1em; /* Size of the arrow */
+}
+
+.edit-card select:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+.edit-card option {
+  padding: 10px; /* Add padding for options */
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: cetner;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.heading h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.heading p {
+  text-align: center;
+  width: 460px;
+}
+.form-container {
+  background-color: #dbdfd0;
+  padding: 10px;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 15px;
+}
+.form-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.form-row input {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  font-size: 14px;
+  width: 200px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.form-group input {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  font-size: 14px;
+}
+.form-group textarea {
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid white;
+  font-size: 14px;
+  width: 100%;
+}
+.submit-btn {
+  border: none;
+  padding: 10px;
+  background-color: #ad343e;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+}
+.info-section {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  /* gap: 30px; */
+  margin: 30px 0;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 150px;
+}
+
+.info-item h3 {
+  font-size: 14px;
+}
+.info-item p {
+  font-size: 10px;
+  width: 100%;
+  text-align: center;
+}

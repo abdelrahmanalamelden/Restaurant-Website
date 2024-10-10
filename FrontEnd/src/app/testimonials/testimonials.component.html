@@ -1,0 +1,21 @@
+<div class="testimonial-section">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial" *ngFor="let testimonial of testimonials">
+      <h3 class="testimonial-title">{{ testimonial.title }}</h3>
+      <p class="testimonial-description">{{ testimonial.description }}</p>
+      <hr />
+      <div class="testimonial-footer">
+        <img
+          [src]="testimonial.image"
+          alt="{{ testimonial.name }}"
+          class="testimonial-img"
+        />
+        <div>
+          <h4 class="testimonial-name">{{ testimonial.name }}</h4>
+          <p class="testimonial-location">{{ testimonial.location }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

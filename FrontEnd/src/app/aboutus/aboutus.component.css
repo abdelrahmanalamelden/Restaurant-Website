@@ -1,0 +1,51 @@
+.about-us {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f9f9f9;
+
+  &__image img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+  &__content {
+    flex: 1;
+    margin-left: 2rem;
+    h1 {
+      font-size: 2.5rem;
+      color: #2c2c2c;
+    }
+    p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+      color: #4f4f4f;
+    }
+    .btn {
+      padding: 0.75rem 2rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  }
+
+  &__contact {
+    margin-top: 2rem;
+    background-color: #3d3d3d;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    i {
+      margin-right: 8px;
+    }
+  }
+}

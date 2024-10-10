@@ -1,0 +1,86 @@
+<div class="register-container">
+  <h2>Create an Account</h2>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input
+        id="fullName"
+        type="text"
+        formControlName="fullName"
+        class="form-control"
+      />
+      <div
+        *ngIf="fullName.invalid && (fullName.dirty || fullName.touched)"
+        class="error"
+      >
+        Full name is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        formControlName="email"
+        class="form-control"
+      />
+      <div
+        *ngIf="email.invalid && (email.dirty || email.touched)"
+        class="error"
+      >
+        <div *ngIf="email.errors?.['required']">Email is required.</div>
+        <div *ngIf="email.errors?.['pattern']">Email is not valid.</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        formControlName="password"
+        class="form-control"
+      />
+      <div
+        *ngIf="password.invalid && (password.dirty || password.touched)"
+        class="error"
+      >
+        Password is required.
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input
+        id="confirmPassword"
+        type="password"
+        formControlName="confirmPassword"
+        class="form-control"
+      />
+      <div
+        *ngIf="
+          confirmPassword.invalid &&
+          (confirmPassword.dirty || confirmPassword.touched)
+        "
+        class="error"
+      >
+        Confirm password is required.
+      </div>
+      <div
+        *ngIf="registerForm.errors?.['passwordMismatch'] && password.touched && confirmPassword.touched"
+        class="error"
+      >
+        Passwords do not match.
+      </div>
+    </div>
+
+    <button type="submit" class="btn-submit" [disabled]="registerForm.invalid">
+      Register
+    </button>
+    <div class="mt-2">
+      <a routerLink="/login">Login</a>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,82 @@
+/* General Container Styling */
+.container {
+  background-color: #f9f9f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+/* Adjust for larger screens */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    padding: auto;
+    gap: 5%;
+  }
+}
+
+/* Apps Section */
+.apps {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* Center apps on small screens */
+  margin: 20px 0;
+}
+
+/* Individual app boxes */
+.app {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 120px; /* Set a fixed width for app boxes */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app img {
+  width: 100%; /* Make the image responsive */
+  display: block;
+}
+
+/* Heading */
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive Adjustments for Larger Screens */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 45px;
+    text-align: left;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: left;
+  }
+}
+
+/* Even Larger Screens */
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 55px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .app {
+    width: 150px; /* Increase app box size */
+  }
+}

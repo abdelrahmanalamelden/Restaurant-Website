@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="heading">
+    <h1>Our Menu</h1>
+    <p>
+      We consider all the drivers of change gives you the components you need to
+      change to create a truly happens.
+    </p>
+  </div>
+  <div class="buttons">
+    <button
+      *ngFor="let button of buttons"
+      (click)="queryProducts(button.link)"
+      class="bn3"
+    >
+      {{ button.title }}
+    </button>
+  </div>
+
+  <div class="cards">
+    <app-mcard
+      *ngFor="let card of products"
+      [src]="card.productImage[0]"
+      routerLink="/product/{{ card._id }}"
+      [price]="card.productPrice"
+      [category]="card.productCategory"
+      [description]="card.productName"
+      [id]="card._id"
+      [onDel1]="onDel"
+      [onEdit1]="onEdit"
+    ></app-mcard>
+  </div>
+
+  <app-order></app-order>
+</div>

@@ -1,0 +1,159 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 24px;
+}
+
+nav {
+  background-color: #f9f9f7;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.nav-links a:hover {
+  background-color: #dbdfd0;
+  border-radius: 30%;
+}
+
+.active {
+  background-color: #dbdfd0 !important;
+  border-radius: 30%;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-buttons button {
+  padding: 8px 16px;
+  font-weight: bold;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f7;
+    gap: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-links a:hover {
+    border-radius: 0;
+  }
+
+  .nav-buttons {
+    display: none; /* Hide button in the dropdown for smaller screens */
+  }
+
+  /* Hamburger menu */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger:before,
+  .hamburger:after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    transition: transform 0.3s ease;
+  }
+
+  .hamburger:before {
+    transform: translateY(-10px);
+  }
+
+  .hamburger:after {
+    transform: translateY(10px);
+  }
+
+  /* Active hamburger (cross icon) */
+  .hamburger.active {
+    transform: rotate(45deg);
+  }
+
+  .hamburger.active:before {
+    transform: rotate(90deg) translateX(10px);
+  }
+
+  .hamburger.active:after {
+    transform: rotate(90deg) translateX(-10px);
+  }
+
+  /* Show nav-links when hamburger is clicked */
+  .nav-links.show {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  .nav-links a {
+    padding: 10px 15px;
+  }
+
+  .nav-buttons {
+    display: none;
+  }
+
+  .hamburger {
+    width: 25px;
+  }
+}

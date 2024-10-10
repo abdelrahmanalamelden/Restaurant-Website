@@ -1,0 +1,96 @@
+.testimonial-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between items */
+}
+
+/* Standard width and height for testimonial cards */
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: red;
+  width: 350px;
+  height: 300px;
+  background-color: #f9f9f7;
+  /* padding: 5px 15px; */
+  padding: 0 10px;
+  border-radius: 15px;
+}
+
+/* Title styling */
+.testimonial-title {
+  color: #ad343e;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/* Description styling */
+.testimonial-description {
+  font-size: 17px;
+  padding: 0 20px;
+}
+
+/* Footer section with image and name */
+.testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.testimonial-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.testimonial-location {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .testimonial {
+    /* width: 100%; Full width for smaller screens */
+    /* max-width: 418px; Keep it centered */
+    /* height: auto; Allow flexible height */
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.5rem;
+  }
+  .testimonial {
+    /* width: 100%; Full width on mobile */
+    /* height: auto; Allow flexible height */
+  }
+}
+
+hr {
+  border: 1px solid #eee;
+  width: 90%;
+  /* margin: 20px auto; */
+}

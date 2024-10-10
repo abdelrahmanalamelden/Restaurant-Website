@@ -1,0 +1,12 @@
+<div class="Browse">
+  <h1>Browse Our Menu</h1>
+  <div class="cards">
+    <app-card
+      *ngFor="let card of cards"
+      [category]="card.title"
+      [description]="card.description"
+      [src]="card.imgSrc"
+      [ref]="card.link"
+    ></app-card>
+  </div>
+</div>

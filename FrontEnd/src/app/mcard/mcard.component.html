@@ -1,0 +1,18 @@
+<div class="card">
+  <img src="{{ src }}" />
+
+  <h3 class="card-price">{{ price }}$</h3>
+  <h5 class="card-title">{{ category }}</h5>
+  <p class="card-text">{{ description }}</p>
+  <div class="card-actions">
+    <!-- Edit button with click event -->
+    <button *ngIf="isAdmin" class="btn-edit" routerLink="/edit/{{ id }}">
+      <i class="fa fa-edit"></i> Edit
+    </button>
+
+    <!-- Delete button with click event -->
+    <button *ngIf="isAdmin" class="btn-delete" (click)="onDel()">
+      <i class="fa fa-trash"></i> Delete
+    </button>
+  </div>
+</div>
